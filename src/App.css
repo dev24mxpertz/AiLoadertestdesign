@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide scroll bars */
+}
+
+
+
+/* Ensure the parent container also has the center origin */
+.parent-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center; /* Center the origin for the parent */
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center; /* Center the origin for the child */
+  position: relative;
+  overflow: hidden;
+}
+
+.Left_h3, .Right_h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4vw;
+  font-family: "Monument Extended Bold";
+  color: white;
+  white-space: nowrap;
+}
+
+.Left_h3 {
+  left: 20%;
+}
+
+.Right_h3 {
+  left: 60%;
+}
+
+.red-box {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform-origin: center center; /* Ensure the red-box scales from the center */
+  transition: opacity 1s ease;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.new-component {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes fadeIn {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
