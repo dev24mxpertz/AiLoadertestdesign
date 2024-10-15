@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow: hidden; /* Hide scroll bars */
 }
-
-
 
 /* Ensure the parent container also has the center origin */
 .parent-container {
@@ -35,22 +34,109 @@ html, body {
   overflow: hidden;
 }
 
-.Left_h3, .Right_h3 {
+.Left_h3,
+.Right_h3,
+.Right_h3_second,
+.Right_h3_third,
+.Right_h3_Fourth,
+.Right_h3_Fifth,
+.Right_h3_sixth,
+.Right_h3_seventh,
+.Right_h3_eight,
+.Right_h3_ninth,
+.Right_h3_tenth,
+.Right_h3_eleven,
+.Right_h3_tweleth,
+.Right_h3_thirtheen {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: "Monument Extended Bold";
   color: white;
   white-space: nowrap;
 }
 
+.heading_h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Monument Extended Bold";
+  font-size: 4vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  scale: (1);
+}
+
 .Left_h3 {
-  left: 20%;
+  left: 38%;
+  opacity: 0;
 }
 
 .Right_h3 {
-  left: 60%;
+  left: 43%;
+  opacity: 0;
+}
+
+.Right_h3_second {
+  left: 43%;
+  opacity: 0;
+}
+
+.Right_h3_third {
+  left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_Fourth {
+  left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_Fifth {
+  left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_sixth{
+    left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_seventh{
+    left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_eight{
+      left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_ninth{
+        left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_tenth{
+          left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_eleven{
+            left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_tweleth{
+              left: 43.5%;
+  opacity: 0;
+}
+
+.Right_h3_thirtheen{
+                left: 43.5%;
+  opacity: 0;
 }
 
 .red-box {

@@ -11,19 +11,230 @@ const App = () => {
   useEffect(() => {
     let tl = gsap.timeline();
 
-    tl.to(".Left_h3", {
-      ease: "expo.inOut",
-      left: "37.4%",
+    tl.to(".heading_h3", {
+      ease: "expo.in",
+      // left: "37.4%",
+      opacity: 1,
+      scale: 0.7,
       duration: 2,
     })
+      .to(".heading_h3", {
+        ease: "expo.in",
+        left: "54%",
+        opacity: 0,
+        duration: 1.5,
+      })
+      .to(
+        ".Left_h3",
+        {
+          ease: "expo.inOut",
+          left: "36%",
+          opacity: 1,
+          duration: 1,
+        }
+        // "-=1"
+      )
+      .to(
+        ".Right_h3_second",
+        {
+          ease: "expo.inOut",
+          left: "43.5%",
+          opacity: 1,
+          duration: 0.5,
+        },
+        "-=0.5"
+      )
+      .to(".Right_h3_second", {
+        ease: "expo.inOut",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      .to(".Right_h3_third", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_third", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      .to(".Right_h3_Fourth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_Fourth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      //
+      .to(".Right_h3_Fifth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_Fifth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_sixth
+      .to(".Right_h3_sixth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_sixth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // -------
+      .to(".Right_h3_seventh", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_seventh", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_eight
+      .to(".Right_h3_eight", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_eight", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_ninth
+      .to(".Right_h3_ninth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_ninth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_tenth
+      .to(".Right_h3_tenth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_tenth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_eleven
+      .to(".Right_h3_eleven", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_eleven", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_tweleth
+      .to(".Right_h3_tweleth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_tweleth", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      // Right_h3_thirtheen
+      .to(".Right_h3_thirtheen", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(".Right_h3_thirtheen", {
+        ease: "expo.out",
+        // left: "44%",
+        opacity: 0,
+        duration: 0.1,
+      })
+      .to(".Right_h3", {
+        ease: "expo.inOut",
+        opacity: 1,
+        duration: 0.1,
+      })
+      .to(
+        ".Left_h3",
+        {
+          ease: "expo.inOut",
+          left: "20%",
+          opacity: 1,
+          duration: 1,
+        }
+        // "-=1"
+      )
       .to(
         ".Right_h3",
         {
           ease: "expo.inOut",
-          left: "43.4%",
-          duration: 2,
+          left: "55%",
+          opacity: 1,
+          duration: 1,
         },
-        "-=2"
+        "-=1"
+      )
+      .to(
+        ".Left_h3",
+        {
+          ease: "expo.inOut",
+          left: "38.2%",
+          opacity: 1,
+          duration: 1.5,
+        }
+        // "-=1"
+      )
+      .to(
+        ".Right_h3",
+        {
+          ease: "expo.inOut",
+          left: "42.5%",
+          opacity: 1,
+          duration: 1.5,
+        },
+        "-=1.5"
       )
       .to(".Left_h3, .Right_h3", {
         opacity: 0,
@@ -59,7 +270,7 @@ const App = () => {
               });
             },
           });
-        }, 4000); // 4 seconds delay
+        }, 3000); // 4 seconds delay
       });
   }, []);
 
@@ -165,8 +376,21 @@ const App = () => {
   return (
     <div className="parent-container">
       <div className="main-container" ref={mainContainerRef}>
+        <h3 className="heading_h3">ATLUS</h3>
         <h3 className="Left_h3">AI</h3>
         <h3 className="Right_h3">WORKFORCE</h3>
+        <h3 className="Right_h3_second">CUSTOMER SUPPORT</h3>
+        <h3 className="Right_h3_third">CONSULTING</h3>
+        <h3 className="Right_h3_Fourth">FRONTEND SOLUTION</h3>
+        <h3 className="Right_h3_Fifth">BACKEND SOLUTION</h3>
+        <h3 className="Right_h3_sixth">ECOMMERCE</h3>
+        <h3 className="Right_h3_seventh">FINANCIAL SERVICES</h3>
+        <h3 className="Right_h3_eight">TRAVEL</h3>
+        <h3 className="Right_h3_ninth">TELECOMMUNICATION</h3>
+        <h3 className="Right_h3_tenth">HEALTH TECH</h3>
+        <h3 className="Right_h3_eleven">ANALYTICS</h3>
+        <h3 className="Right_h3_tweleth">SUPPLYCHAIN</h3>
+        <h3 className="Right_h3_thirtheen">IT AND CYBERSECURITY</h3>
         <div className="red-box">
           <canvas ref={canvasRef} />
         </div>
